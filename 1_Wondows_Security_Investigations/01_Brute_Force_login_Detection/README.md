@@ -20,20 +20,14 @@ Attack behavior:
 
 This behavior is typical of password-guessing attacks.
 # Evidence (Log Snippets)
-Event ID: 4625
-Account Name: testuser
-Logon Type: 3
-Source IP: 192.168.56.101
-
 Failed login
-'''
+"""
 TargetUserName: TestUser
 LogonType: 3
 FailureReason: Unknown user name or bad password
 SoureNetworkAddress: 10.48.190.14
-'''
+"""
 Successful login
-'''
 Account Name: TestUser
 Logon Type: 3
 Source Network Address: 10.48.190.14
