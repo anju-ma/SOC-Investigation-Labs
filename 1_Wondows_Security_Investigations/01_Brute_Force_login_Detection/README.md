@@ -20,6 +20,11 @@ Attack behavior:
 
 This behavior is typical of password-guessing attacks.
 # Evidence (Log Snippets)
+Event ID: 4625
+Account Name: testuser
+Logon Type: 3
+Source IP: 192.168.56.101
+
 Failed login
 '''
 TargetUserName: TestUser
