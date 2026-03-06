@@ -22,15 +22,23 @@ This behavior is typical of password-guessing attacks.
 # Evidence (Log Snippets)
 Failed login
 '''
-event id:
-Account name:
+TargetUserName: TestUser
+LogonType: 3
+FailureReason: Unknown user name or bad password
+SoureNetworkAddress: 10.48.190.14
 '''
+Successful login
+'''
+Account Name: TestUser
+Logon Type: 3
+Source Network Address: 10.48.190.14
+
 # Timeline Reconstruction
 | Time | Event |
 |------|-------|
-| 10:02 | Multiple failed login attempts |
-| 10.03 | Continued authentication failures from same IP |
-| 10.19 | Successful login detected (Event ID 4624) |
+| 3:57 | Multiple failed login attempts |
+| 3:58 | Continued authentication failures from same IP |
+| 3.59 | Successful login detected (Event ID 4624) |
 # Investigation Analysis
 * Filtered Windows Security logs for Event ID 4625.
 * Observed repeated failed login attempts targeting the same user.
@@ -56,7 +64,7 @@ Mapped to the framework.
 |--------------|-----------|
 | T1110 | Brute Force |
 
-Adversaries attempt to guess passwords repeatedly to gain access to user accounts.
+Adversaries attempt to guess passwords repeatedly to gain unauthorized access to user accounts.
 # Impact Analysis
 If successful, a brute force attack may allow attackers to:
 * Gain unauthorized access to user accounts
