@@ -20,7 +20,11 @@ Attack behavior:
 
 This behavior is typical of password-guessing attacks.
 # Evidence (Log Snippets)
-Failed login''' TargetUserName: TestUser LogonType: 3 FailureReason: Unknown user name or bad password SoureNetworkAddress: 10.48.190.14 '''
+Failed login
+TargetUserName: TestUser 
+LogonType: 3 
+FailureReason: Unknown user name or bad password 
+SoureNetworkAddress: 10.48.190.14
 
 Successful login
 Account Name: TestUser
