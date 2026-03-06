@@ -55,6 +55,7 @@ Mapped to the framework.
 | Technique ID | Technique |
 |--------------|-----------|
 | T1110 | Brute Force |
+
 Adversaries attempt to guess passwords repeatedly to gain access to user accounts.
 # Impact Analysis
 If successful, a brute force attack may allow attackers to:
