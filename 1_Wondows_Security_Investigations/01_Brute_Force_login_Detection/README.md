@@ -2,9 +2,7 @@
 Multiple failed login attempts (Event ID 4625) were observed targeting the user account "testuser" from the same source IP address. Shortly after the failed attempts, a successful login (Event ID 4624) occurred from the same IP. This activity indicates a potential brute force authentication attack.
 # Log Source
 Logs were analyzed from the Windows Security Event Log.
-Event ID: 4625␠␠
-Account Name: testuser␠␠
-Logon Type: 3␠␠
+
 Relevant events:
 | Event ID | Description |
 |----------|-------------|
@@ -22,11 +20,12 @@ Attack behavior:
 
 This behavior is typical of password-guessing attacks.
 # Evidence (Log Snippets)
-Failed login
-/n TargetUserName: TestUser 
-\n LogonType: 3 
-FailureReason: Unknown user name or bad password 
-SoureNetworkAddress: 10.48.190.14 
+| Failed login |
+-----------------
+| TargetUserName: TestUser |
+| nLogonType: 3 |
+| FailureReason: Unknown user name or bad password |
+| SoureNetworkAddress: 10.48.190.14 |
 
 Successful login
 --------------------
