@@ -26,9 +26,13 @@ This technique is commonly used by attackers to gain administrative privileges a
 # Evidence (Log Snippets)
 Successful Login
 Event ID: 4624
+
 Account Name: testuser
+
 Logon Type: 3
+
 User Account Created
+
 Event ID: 4720
 Account Name: hackeruser
 Subject User Name: testuser
