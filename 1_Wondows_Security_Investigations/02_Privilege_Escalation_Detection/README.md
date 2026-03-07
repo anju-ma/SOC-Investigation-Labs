@@ -14,7 +14,7 @@ Logs were reviewed using Windows Event Viewer.
 # Attack Scenario
 A privilege escalation scenario was simulated on a Windows system.
 Attack behavior:
-* An attacker logged into the system using a normal user account.
+* An attacker logged into the system using a valid user account.
 * The attacker created a new user account.
 * The attacker added the newly created account to the Administrators group.
 Commands used during the attack simulation:
@@ -44,6 +44,7 @@ Group Name: Administrators
 | Time | Event |
 |------|-------|
 | 11:00 | Successful login detected (Event ID 4624) |
+| 11.02 | Command execution detected (Event ID 4688) |
 | 11:02 | New user account created (Event ID 4720) |
 | 11:03 | User added to Administrators group (Event ID 4732) |
 # Investigation Analysis
