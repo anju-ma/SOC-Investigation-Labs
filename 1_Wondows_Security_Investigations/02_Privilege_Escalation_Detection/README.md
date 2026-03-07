@@ -66,8 +66,10 @@ Detection rules like this can be implemented in SIEM platforms such as Splunk or
 # Attack Classification
 Mapped to the MITRE ATT&CK Framework.
 | Technique ID | Technique |
+|--------------|-----------|
 | T1078 | Valid Accounts |
 | T1136 | Create Account |
+
 Attackers may create new accounts and assign administrative privileges to maintain persistent access.
 # Impact Analysis
 If successful, privilege escalation may allow attackers to:
