@@ -9,6 +9,7 @@ Relevant events:
 | 4688 | Process Creation |
 | 4720 | User account created |
 | 4732 | Member added to local Administrators group |
+
 Logs were reviewed using Windows Event Viewer.
 # Attack Scenario
 A privilege escalation scenario was simulated on a Windows system.
